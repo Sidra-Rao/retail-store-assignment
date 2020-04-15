@@ -9,7 +9,7 @@ as a discount).
 6. A user can get only one of the percentage based discounts on a bill.
 
 ## Requirements:
-Apache Maven lets see what is 
+Apache Maven
 Java 8
 Mysql 
 
