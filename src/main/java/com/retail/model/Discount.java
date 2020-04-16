@@ -36,35 +36,7 @@ public class Discount extends BaseModel implements Serializable{
 	public void setDiscountPercentage(Integer discountPercentage) {
 		this.discountPercentage = discountPercentage;
 	}
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = super.hashCode();
-		result = prime * result + ((discountPercentage == null) ? 0 : discountPercentage.hashCode());
-		result = prime * result + ((discountType == null) ? 0 : discountType.hashCode());
-		return result;
-	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (!super.equals(obj))
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Discount other = (Discount) obj;
-		if (discountPercentage == null) {
-			if (other.discountPercentage != null)
-				return false;
-		} else if (!discountPercentage.equals(other.discountPercentage))
-			return false;
-		if (discountType == null) {
-			if (other.discountType != null)
-				return false;
-		} else if (!discountType.equals(other.discountType))
-			return false;
-		return true;
-	}
+	
 	@Override
 	public String toString() {
 		return "Discount [discountType=" + discountType + ", discountPercentage=" + discountPercentage + "]";
